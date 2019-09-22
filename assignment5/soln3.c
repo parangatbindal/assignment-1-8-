@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main()
+{
+	int x,y;
+	for(y=0;y<4;y++)
+	{
+		for(x=0;x<10;x++)
+		{
+			if(y%2==0)
+			{
+			if(x%2==1)
+			{
+				printf("*");
+			}
+			else
+			{
+				printf("O");
+			}
+			}
+			else
+			{
+				if(x%2==1)
+				{
+					printf("O");
+				}
+				else
+					printf("*");
+			}
+		}
+		printf("\n");
+	}
+}
